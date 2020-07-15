@@ -1,25 +1,43 @@
-# Build an image:
+### Build an image:
+```
 docker build -t <name>:<tag> .
+```
 
-# Run interactive terminal in image
+### Run interactive terminal in image
+```
 docker run -it <name>:<tag> bash
-- Note: Very helpful to prep unix os based build
+```
+Note: Very helpful to prep unix os based build
 
-# List Containers
+### List Containers
+```
 docker ps -a
+```
 
-# Remove Containers
+### Remove Containers
+```
 docker rm <container hash>
+```
 
-# Remove All Containers
+### Remove All Containers
+```
 docker rm $(docker ps -a -q)
+```
 
-# List Images
+### List Images
+```
 docker images -a
+```
 
-# Delete Image
+### Delete Image
+```
 docker rmi <name>:<tag>
+```
+```
 docker rmi <image hash>
+```
 
-# Delete All Images
+### Delete All Images
+```
 docker system prune -a
+```
