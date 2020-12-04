@@ -1,6 +1,6 @@
 # Getting Started
 1. Install Docker CE
-1. Build the Docker Image using build args
+2. Build the Docker Image using build args
   - See the `Build an image` section below.
   - Once built, an image can be dispatched to N containers
   - There is not hot loading set up. Any changes, force a container rebuild
@@ -8,7 +8,7 @@
   - Builds and containers can get heavy
     - Remove old containers when they finish running
     - Remove old images that have been deprecated
-1. Notes
+3. Notes
   - The host machine's `localhost` is normally `172.17.0.1` within a running container
   - The docker IP is normally `172.17.0.2`
 
